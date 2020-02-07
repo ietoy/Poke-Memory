@@ -1,8 +1,8 @@
 import React from "react";
 
 function Tile(props) {
-    console.log("=================================================================");
-    console.log(props)
+    // console.log("=================================================================");
+    // console.log(props)
     return (
         <div className="col s12 m6 l3" id={props.name}>
             <img

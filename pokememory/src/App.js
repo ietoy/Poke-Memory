@@ -8,8 +8,9 @@ import Tile from "./components/Tile"
 import pokemon from "./pokemon.json";
 
 class App extends Component {
+
   state = {
-    bannerText: "",
+    bannerText: "Hello world!",
     topScore: 0,
     curScore: 0,
     pokemon,
@@ -27,17 +28,16 @@ class App extends Component {
   //   return arr;
   // }
 
-
+  // componentDidMount() {
+  //   console.log(this.state.bannerText)
+  // }
 
 
   // WRITE HANDLE CLICK FUNCTION
-  handleClick(id) {
-    console.log("You clicked me!");
-    console.log("The pokemon you clicked has the id of " + id);
+  handleClick = id => {
+    this.setState({ clickedPkmn: [...this.state.clickedPkmn, id]})
 
-    // const clickedPkmn = this.state.clickedPkmn;
-
-    // console.log(clickedPkmn);
+    console.log(this.state.clickedPkmn)
 
   };
 
