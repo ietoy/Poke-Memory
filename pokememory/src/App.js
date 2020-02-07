@@ -15,9 +15,7 @@ class App extends Component {
     pokemon,
     clickedPkmn: []
   }
-
-  // WRITE HANDLE CLICK FUNCTION
-    
+ 
   // pokeShuffle = arr => {
   //   var newInd;
   //   for (var i = arr.length -1; i > 0; i--) {
@@ -29,11 +27,19 @@ class App extends Component {
   //   return arr;
   // }
 
+  // WRITE HANDLE CLICK FUNCTION
+  handleClick(e) {
+    console.log("You clicked me!");
+    console.log("The pokemon you clicked has the id of " + e)
+  };
+
+
+
+
   render() {
-    console.log(pokemon);
+    // console.log(pokemon);
     return (
       <div>
-  
         <Banner />
   
         <Game>
@@ -43,18 +49,15 @@ class App extends Component {
               key={pkmn.id}
               name={pkmn.name}
               img={pkmn.img}
-              // handleClick={pkmn.handleClick}
+              handleClick={this.handleClick}
             />
           ))}
         </Game>
         
         <Footer />
-  
       </div>
     );
   }
-  
-
 }
 
 

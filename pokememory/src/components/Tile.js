@@ -1,6 +1,7 @@
 import React from "react";
 
 function Tile(props) {
+    console.log("=================================================================");
     console.log(props)
     return (
         <div className="col s12 m6 l3" id={props.name}>
@@ -8,7 +9,7 @@ function Tile(props) {
                 className="responsive-img z-depth-2 hoverable"
                 src={props.img}
                 alt={props.name}
-                // onClick={() => props.handleClick(props.id)}    
+                onClick={() => props.handleClick(props.id)}    
             />
         </div>
     )
