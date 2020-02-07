@@ -6,7 +6,8 @@ function Banner() {
             <div className="navbar-fixed">
                 <nav>
                     <div className="nav-wrapper">
-                        <div className="left">Poke-Memory</div>
+                        {/* click response will show here */}
+                        <div className="left">Click a Pokemon to Start!</div>
                         <div className="right">Scores here!</div>
                     </div>
                 </nav>
