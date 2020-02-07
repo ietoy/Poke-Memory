@@ -43,7 +43,7 @@ class App extends Component {
               key={pkmn.id}
               name={pkmn.name}
               img={pkmn.img}
-              handleClick={pkmn.handleClick}
+              // handleClick={pkmn.handleClick}
             />
           ))}
         </Game>

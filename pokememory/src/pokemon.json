@@ -1,130 +1,65 @@
 [
     {
         "id": 1,
-        "name": "absol",
-        "img": ""
+        "name": "charizard",
+        "img": "https://i.insider.com/57910997dd0895a56e8b4572?width=1000&format=jpeg&auto=webp"
     },
     {
         "id": 2,
-        "name": "ampharos",
-        "img": ""
+        "name": "gengar",
+        "img": "https://i.insider.com/57910997dd0895a56e8b45ca?width=1000&format=jpeg&auto=webp"
     },
     {
         "id": 3,
         "name": "arcanine",
-        "img": ""
-    },
+        "img": "https://i.insider.com/57910997dd0895a56e8b45a7?width=1000&format=jpeg&auto=webp"
+    },    
     {
         "id": 4,
-        "name": "blastoise",
-        "img": ""
+        "name": "bulbasaur",
+        "img": "https://i.insider.com/57910997dd0895a56e8b456d?width=1000&format=jpeg&auto=webp"
     },
     {
         "id": 5,
         "name": "blaziken",
-        "img": ""
+        "img": "https://i.insider.com/5d0bc24ce3ecba58d75a6797?width=1000&format=jpeg&auto=webp"
     },
     {
         "id": 6,
-        "name": "bulbasaur",
-        "img": ""
+        "name": "umbreon",
+        "img": "https://i.insider.com/5d0bc24ce3ecba040f4ec125?width=1000&format=jpeg&auto=webp"
     },
     {
         "id": 7,
-        "name": "charizard",
-        "img": ""
+        "name": "lucario",
+        "img": "https://i.insider.com/5d0bc24ce3ecba0383189f56?width=1000&format=jpeg&auto=webp"
     },
     {
         "id": 8,
-        "name": "eevee",
-        "img": ""
+        "name": "gardevoir",
+        "img": "https://i.insider.com/5d0bc24cb587c6681c735e8a?width=1000&format=jpeg&auto=webp"
     },
     {
         "id": 9,
-        "name": "garchomp",
-        "img": ""
-    },
+        "name": "eevee",
+        "img": "https://i.insider.com/57910997dd0895a56e8b45f1?width=1000&format=jpeg&auto=webp"
+    },    
     {
         "id": 10,
-        "name": "gardevoir",
-        "img": ""
+        "name": "dragonite",
+        "img": "https://i.insider.com/57910997dd0895a56e8b456d?width=1000&format=jpeg&auto=webp"
     },
     {
         "id": 11,
-        "name": "gengar",
-        "img": ""
+        "name": "absol",
+        "img": "https://i.insider.com/5d0bc24ce3ecba034047b4db?width=1000&format=jpeg&auto=webp"
     },
     {
         "id": 12,
-        "name": "infernape",
-        "img": ""
-    },
-    {
-        "id": 13,
-        "name": "lucario",
-        "img": ""
-    },
-    {
-        "id": 14,
-        "name": "luxray",
-        "img": ""
-    },
-    {
-        "id": 15,
-        "name": "mudkip",
-        "img": ""
-    },
-    {
-        "id": 16,
-        "name": "ninetails",
-        "img": ""
-    },
-    {
-        "id": 17,
-        "name": "pikachu",
-        "img": ""
-    },
-    {
-        "id": 18,
-        "name": "scizor",
-        "img": ""
-    },
-    {
-        "id": 19,
-        "name": "snorlax",
-        "img": ""
-    },
-    {
-        "id": 20,
-        "name": "squirtle",
-        "img": ""
-    },
-    {
-        "id": 21,
-        "name": "torterra",
-        "img": ""
-    },
-    {
-        "id": 22,
         "name": "typhlosion",
-        "img": ""
-    },
-    {
-        "id": 23,
-        "name": "tyranitar",
-        "img": ""
-    },
-    {
-        "id": 24,
-        "name": "umbreon",
-        "img": ""
+        "img": "https://i.insider.com/5d0bc24c97ad76657e738953?width=1000&format=jpeg&auto=webp"
     }
     
+
     
-
-
-
-
-
-
 ]
