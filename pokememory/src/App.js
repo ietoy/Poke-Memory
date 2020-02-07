@@ -27,10 +27,18 @@ class App extends Component {
   //   return arr;
   // }
 
+
+
+
   // WRITE HANDLE CLICK FUNCTION
-  handleClick(e) {
+  handleClick(id) {
     console.log("You clicked me!");
-    console.log("The pokemon you clicked has the id of " + e)
+    console.log("The pokemon you clicked has the id of " + id);
+
+    // const clickedPkmn = this.state.clickedPkmn;
+
+    // console.log(clickedPkmn);
+
   };
 
 
