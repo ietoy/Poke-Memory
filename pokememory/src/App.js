@@ -36,6 +36,11 @@ class App extends Component {
 
     if (this.state.clickedPkmn.includes(id)) {
       console.log("You clicked that one already!");
+
+      if (this.state.curScore > this.state.topScore) {
+        this.setState({ topScore: this.state.curScore })
+      }
+
       this.setState({ clickedPkmn: [] });
       this.setState({ curScore: 0 });
 
