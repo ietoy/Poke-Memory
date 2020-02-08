@@ -35,23 +35,23 @@ class App extends Component {
   handleClick = id => {
 
     if (this.state.clickedPkmn.includes(id)) {
-      console.log("You clicked that one already!");
+      // console.log("You clicked that one already!");
 
       if (this.state.curScore > this.state.topScore) {
         this.setState({ topScore: this.state.curScore })
       }
 
+      this.setState({ bannerText: "Oh no! You clicked that one already! Try again?" })
       this.setState({ clickedPkmn: [] });
       this.setState({ curScore: 0 });
 
     } else {
 
+      this.setState({ bannerText: "You guessed correctly! Keep going!"})
       this.setState({ clickedPkmn: [...this.state.clickedPkmn, id]});
       var newScore = this.state.curScore + 1;
-      console.log("New score is " + newScore);
       this.setState({ curScore: newScore});
-      console.log(this.state.clickedPkmn);
-      console.log(this.state.curScore)
+  
     
     }
 
