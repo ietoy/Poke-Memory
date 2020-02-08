@@ -10,13 +10,15 @@ import pokemon from "./pokemon.json";
 class App extends Component {
 
   state = {
-    bannerText: "Hello world!",
+    bannerText: "Click a Pokemon to Start!",
     topScore: 0,
     curScore: 0,
     pokemon,
     clickedPkmn: []
   }
  
+
+  // ERROR ABOUT TEMP NOT BEING DEFINED???
   // pokeShuffle = arr => {
   //   var newInd;
   //   for (var i = arr.length -1; i > 0; i--) {
@@ -28,16 +30,25 @@ class App extends Component {
   //   return arr;
   // }
 
-  // componentDidMount() {
-  //   console.log(this.state.bannerText)
-  // }
-
 
   // WRITE HANDLE CLICK FUNCTION
   handleClick = id => {
-    this.setState({ clickedPkmn: [...this.state.clickedPkmn, id]})
 
-    console.log(this.state.clickedPkmn)
+    if (this.state.clickedPkmn.includes(id)) {
+      console.log("You clicked that one already!");
+      this.setState({ clickedPkmn: [] });
+      this.setState({ curScore: 0 });
+
+    } else {
+
+      this.setState({ clickedPkmn: [...this.state.clickedPkmn, id]});
+      var newScore = this.state.curScore + 1;
+      console.log("New score is " + newScore);
+      this.setState({ curScore: newScore});
+      console.log(this.state.clickedPkmn);
+      console.log(this.state.curScore)
+    
+    }
 
   };
 
@@ -48,7 +59,11 @@ class App extends Component {
     // console.log(pokemon);
     return (
       <div>
-        <Banner />
+        <Banner 
+          bannerText={this.state.bannerText}
+          curScore={this.state.curScore}
+          topScore={this.state.topScore}
+        />
   
         <Game>
           {this.state.pokemon.map(pkmn => (

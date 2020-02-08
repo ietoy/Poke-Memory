@@ -1,14 +1,14 @@
 import React from "react";
 
-function Banner() {
+function Banner(props) {
     return (
         <div>
             <div className="navbar-fixed">
                 <nav>
-                    <div className="nav-wrapper">
+                    <div className="nav-wrapper container">
                         {/* click response will show here */}
-                        <div className="left">Click a Pokemon to Start!</div>
-                        <div className="right">Scores here!</div>
+                        <div className="left">{props.bannerText}</div>
+                        <div className="right">Your Score: {props.curScore} | Top Score: {props.topScore}</div>
                     </div>
                 </nav>
             </div>
